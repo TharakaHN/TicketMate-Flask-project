@@ -1,10 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Predicted Income</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Input</title>
 </head>
 <body>
-    <h1>Predicted Income</h1>
-    <p>The predicted income for the next month is: <strong>{{ predicted_income }}</strong></p>
+    <h1>Input Values for Prediction</h1>
+    <form action="/predict" method="post">
+        <label for="SeatCount">Seat Count:</label>
+        <input type="text" id="SeatCount" name="SeatCount"><br><br>
+        <label for="ACNonAC">AC/Non-AC:</label>
+        <input type="text" id="ACNonAC" name="ACNonAC"><br><br>
+        <label for="TicketPrice">Ticket Price:</label>
+        <input type="text" id="TicketPrice" name="TicketPrice"><br><br>
+        <label for="MonthlyBookedSeats">Monthly Booked Seats:</label>
+        <input type="text" id="MonthlyBookedSeats" name="MonthlyBookedSeats"><br><br>
+        <label for="NumberOfRides">Number of Rides:</label>
+        <input type="text" id="NumberOfRides" name="NumberOfRides"><br><br>
+        <label for="WorkingDays">Working Days:</label>
+        <input type="text" id="WorkingDays" name="WorkingDays"><br><br>
+        <label for="PreviousMonthIncome">Previous Month Income:</label>
+        <input type="text" id="PreviousMonthIncome" name="PreviousMonthIncome"><br><br>
+        <label for="BaseMonthlyIncome">Base Monthly Income:</label>
+        <input type="text" id="BaseMonthlyIncome" name="BaseMonthlyIncome"><br><br>
+        <label for="AC">AC:</label>
+        <input type="text" id="AC" name="AC"><br><br>
+        <label for="SemiLux">Semi-Luxury:</label>
+        <input type="text" id="SemiLux" name="SemiLux"><br><br>
+        <label for="Normal">Normal:</label>
+        <input type="text" id="Normal" name="Normal"><br><br>
+        <label for="Luxury">Luxury:</label>
+        <input type="text" id="Luxury" name="Luxury"><br><br>
+        <label for="BusNumber">Bus Number:</label>
+        <input type="text" id="BusNumber" name="BusNumber"><br><br>
+        <!-- Add more input fields as necessary -->
+        <input type="submit" value="Predict">
+    </form>
 </body>
 </html>
