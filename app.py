@@ -19,7 +19,7 @@ app = Flask(__name__)
 
 # Load the model
 def load_model():
-    return joblib.load('model/trained_model.pkl')
+    return joblib.load('model/3Bus_Trained_model.pkl')
 
 def load_train_model():
     return joblib.load('model/Train_trained_model2.pkl')
